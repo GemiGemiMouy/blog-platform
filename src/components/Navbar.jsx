@@ -7,16 +7,17 @@ export default function Navbar() {
 
   return (
     <nav
-      className="
-        fixed top-0 left-0 right-0 z-50
-        bg-white/50 dark:bg-slate-900/60 backdrop-blur-md
-        shadow-sm
-        border-b border-gray-200 dark:border-gray-700
-        px-16 py-6
-        flex items-center justify-between
-        text-slate-800 dark:text-gray-200
-      "
-    >
+  className="
+    fixed top-0 left-0 right-0 z-50
+    bg-white/50 dark:bg-slate-900/60 backdrop-blur-md
+    shadow-sm
+    border-b border-gray-200 dark:border-gray-700
+    px-2 sm:px-4 md:px-16 py-3 md:py-6
+    flex items-center justify-between
+    text-slate-800 dark:text-gray-200
+  "
+>
+
       {/* Logo */}
       <Link
         to="/"
@@ -80,12 +81,13 @@ export default function Navbar() {
       {/* Right side */}
       <div className="flex items-center space-x-10">
         <DarkModeToggle />
+            <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+            aria-label="Toggle menu"
+            aria-expanded={mobileMenuOpen}  // Add this line
+            >
 
-        <button
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition"
-          aria-label="Toggle menu"
-        >
           <svg
             className="w-7 h-7 text-slate-800 dark:text-gray-200"
             fill="none"
