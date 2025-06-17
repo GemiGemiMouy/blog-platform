@@ -8,6 +8,12 @@ A sleek and responsive blog platform built using **React** and **Tailwind CSS**,
 - Email contact form (via EmailJS)
 - Fully responsive design
 
+## 🌐 Live Demo
+
+Check out the live site deployed on Netlify:  
+[https://dainty-rugelach-b0c5d1.netlify.app](https://dainty-rugelach-b0c5d1.netlify.app)
+
+
 ## 🔧 Tech Stack
 
 - **Frontend**: React, Tailwind CSS
