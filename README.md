@@ -1,4 +1,4 @@
-# 📝 Modern Blog Platform
+# 📝 Blog Platform
 
 A sleek and responsive blog platform built using **React** and **Tailwind CSS**, featuring:
 - Category filtering
