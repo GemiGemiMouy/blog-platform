@@ -17,8 +17,13 @@ A sleek and responsive blog platform built using **React** and **Tailwind CSS**,
 
 ## 📸 Screenshots
 
-![Homepage Light Mode](./public/screenshots/home-light.png)
-![Homepage Dark Mode](./public/screenshots/home-dark.png)
+### Dark Mode
+
+![Dark Mode Screenshot](screenshots/darkmode.png)
+
+### Light Mode
+
+![Light Mode Screenshot](screenshots/lightmode.png)
 
 ## 🚀 Features
 
