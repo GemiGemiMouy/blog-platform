@@ -1,17 +1,37 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white dark:from-slate-900 dark:to-slate-800 text-gray-800 dark:text-gray-200 px-4 py-12">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="min-h-screen bg-gradient-to-b from-indigo-50 to-white dark:from-slate-900 dark:to-slate-800 text-gray-800 dark:text-gray-200 px-4 py-12"
+    >
       <div className="max-w-2xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-4 text-indigo-700 dark:text-indigo-400">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="text-4xl font-bold text-center mb-4 text-indigo-700 dark:text-indigo-400"
+        >
           Get in Touch
-        </h1>
-        <p className="text-center mb-10 text-gray-600 dark:text-gray-400">
-          Want to work together or have a question? Send me a message!
-        </p>
+        </motion.h1>
 
-        <form
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="text-center mb-10 text-gray-600 dark:text-gray-400"
+        >
+          Want to work together or have a question? Send me a message!
+        </motion.p>
+
+        <motion.form
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.7 }}
           className="bg-white/70 dark:bg-slate-800/80 backdrop-blur-md shadow-xl p-8 rounded-2xl space-y-8 transition-all duration-300"
         >
           {/* Name Field */}
@@ -71,10 +91,15 @@ export default function Contact() {
           >
             Send Message
           </button>
-        </form>
+        </motion.form>
 
         {/* Social Links */}
-        <div className="flex justify-center space-x-6 mt-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1.2 }}
+          className="flex justify-center space-x-6 mt-10"
+        >
           <a
             href="https://t.me/Seakmouy_Seng"
             target="_blank"
@@ -102,8 +127,8 @@ export default function Contact() {
           >
             <i className="fab fa-whatsapp fa-2x"></i>
           </a>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }
