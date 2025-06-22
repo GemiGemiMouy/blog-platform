@@ -11,7 +11,7 @@ A sleek and responsive blog platform built using **React** and **Tailwind CSS**,
 ## 🌐 Live Demo
 
 Check out the live site deployed on Netlify:  
-[https://dainty-rugelach-b0c5d1.netlify.app](https://dainty-rugelach-b0c5d1.netlify.app)
+[https://gemi-blogplatform.netlify.app/](https://gemi-blogplatform.netlify.app/)
 
 
 ## 🔧 Tech Stack
